@@ -9,8 +9,9 @@ def generate_bar_chart(labels, values):
   plt.show()
 
 def generate_pie_chart(labels, values):
+  colores = ['green', 'gray', 'blue']
   fig, ax = plt.subplots()
-  ax.pie(values, labels=labels)
+  ax.pie(values, labels= labels, autopct='%.1f%%', colors = colores, shadow = True, startangle=90)
   ax.axis('equal')
   plt.show()
 
